@@ -18,3 +18,28 @@ void loop() {
     delay(100);
   }
 }
+
+//ou
+
+int chavePin = 7;
+int buzzerPin = 10;
+int estadoChave = 1;
+
+void setup() {
+  pinMode(buzzerPin, OUTPUT);
+  pinMode(chavePin, INPUT);
+}
+
+void loop() {
+  estadoChave = digitalRead(chavePin);
+  if (estadoChave == HIGH){
+    tone(buzzerPin, 392); //diferença aqui
+    delay(1000);
+      noTone(buzzerPin);
+  }
+  else {
+    digitalWrite(buzzerPin, LOW);
+    delay(100);
+  }
+}
+
