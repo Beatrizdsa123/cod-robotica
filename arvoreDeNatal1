@@ -1,0 +1,131 @@
+#define LEDvermelho2 4
+#define LEDamarelo2 5
+#define LEDazul2 6
+#define LEDverde 7
+#define LEDazul 8
+#define LEDamarelo 9
+#define LEDvermelho 10
+
+void setup()
+{
+  pinMode(LEDazul, OUTPUT);
+  pinMode (LEDamarelo, OUTPUT);
+  pinMode (LEDvermelho, OUTPUT);
+  pinMode(LEDverde, OUTPUT);
+  pinMode (LEDamarelo2, OUTPUT);
+  pinMode (LEDvermelho2, OUTPUT);
+  pinMode (LEDazul2, OUTPUT);
+
+}
+
+void loop()
+{
+
+  digitalWrite(LEDvermelho2, HIGH);
+  delay(500);
+  digitalWrite(LEDvermelho2, LOW);
+  delay(250);
+
+  digitalWrite(LEDamarelo2, HIGH);
+  delay(500);
+  digitalWrite(LEDamarelo2, LOW);
+  delay(250);
+
+  digitalWrite(LEDazul2, HIGH);
+  delay(500);
+  digitalWrite(LEDazul2, LOW);
+  delay(250);
+
+  digitalWrite(LEDverde, HIGH);
+  delay(500);
+  digitalWrite(LEDverde, LOW);
+  delay(250);
+
+  digitalWrite(LEDazul, HIGH);
+  delay(500);
+  digitalWrite(LEDazul, LOW);
+  delay(250);
+  
+  digitalWrite(LEDamarelo, HIGH);
+  delay(500);
+  digitalWrite(LEDamarelo, LOW);
+  delay(250);
+  
+  digitalWrite(LEDvermelho, HIGH);
+  delay(500);
+  digitalWrite(LEDvermelho, LOW);
+  delay(250);
+
+  digitalWrite(LEDazul, HIGH);
+  digitalWrite(LEDamarelo, HIGH);
+  digitalWrite(LEDvermelho, HIGH);  
+  digitalWrite(LEDazul2, HIGH);
+  digitalWrite(LEDamarelo2, HIGH);
+  digitalWrite(LEDvermelho2, HIGH); 
+  digitalWrite(LEDverde, HIGH);
+  delay(500);
+  digitalWrite(LEDazul, LOW);
+  digitalWrite(LEDamarelo, LOW);
+  digitalWrite(LEDvermelho, LOW);
+  digitalWrite(LEDazul2, LOW);
+  digitalWrite(LEDamarelo2, LOW);
+  digitalWrite(LEDvermelho2, LOW);
+  digitalWrite(LEDverde, LOW);
+  delay(250);
+
+  digitalWrite(LEDvermelho, HIGH);
+  delay(500);
+  digitalWrite(LEDvermelho, LOW);
+  delay(250);
+
+  digitalWrite(LEDamarelo, HIGH);
+  delay(500);
+  digitalWrite(LEDamarelo, LOW);
+  delay(250);
+
+  digitalWrite(LEDazul, HIGH);
+  delay(500);
+  digitalWrite(LEDazul, LOW);
+  delay(250);
+  
+  digitalWrite(LEDverde, HIGH);
+  delay(500);
+  digitalWrite(LEDverde, LOW);
+  delay(250);
+  
+  digitalWrite(LEDazul2, HIGH);
+  delay(500);
+  digitalWrite(LEDazul2, LOW);
+  delay(250);
+
+  digitalWrite(LEDamarelo2, HIGH);
+  delay(500);
+  digitalWrite(LEDamarelo2, LOW);
+  delay(250);
+
+  digitalWrite(LEDvermelho2, HIGH);
+  delay(500);
+  digitalWrite(LEDvermelho2, LOW);
+  delay(250);
+
+
+  digitalWrite(LEDazul, HIGH);
+  digitalWrite(LEDamarelo, HIGH);
+  digitalWrite(LEDvermelho, HIGH); 
+  digitalWrite(LEDazul2, HIGH);
+  digitalWrite(LEDamarelo2, HIGH);
+  digitalWrite(LEDvermelho2, HIGH); 
+  digitalWrite(LEDverde, HIGH);
+
+  delay(500);
+  digitalWrite(LEDazul, LOW);
+  digitalWrite(LEDamarelo, LOW);
+  digitalWrite(LEDvermelho, LOW);
+  digitalWrite(LEDazul2, LOW);
+  digitalWrite(LEDamarelo2, LOW);
+  digitalWrite(LEDvermelho2, LOW);
+  digitalWrite(LEDverde, LOW);
+
+  delay(250);
+  
+}
