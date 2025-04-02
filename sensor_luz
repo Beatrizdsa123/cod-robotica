@@ -1,0 +1,31 @@
+int ledVermelho = 7;
+int ledAzul = 6;
+int ledVerde = 5;
+
+int SensorLDR = A5;
+
+void setup() {
+  pinMode(ledVermelho, OUTPUT);
+  pinMode(ledAzul, OUTPUT);
+  pinMode(ledVerde, OUTPUT);
+  pinMode(SensorLDR, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int leitura = analogRead(SensorLDR);
+  Serial.print("Leitura: ");
+  Serial.println(leitura);
+  
+  if (leitura < 700) {
+    digitalWrite(ledVermelho, HIGH);
+    digitalWrite(ledAzul, HIGH);
+    digitalWrite(ledVerde, HIGH);
+  } else {
+    digitalWrite(ledVermelho, LOW);
+    digitalWrite(ledAzul, LOW);
+    digitalWrite(ledVerde, LOW);
+  }
+  
+  delay(100);
+}
